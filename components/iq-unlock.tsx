@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useFarcasterWallet } from '@/hooks/useFarcasterWallet'
 import { useUnlockIQ } from '@/hooks/useUnlockIQ'
 import { Button } from '@/components/ui/button'
@@ -19,6 +19,8 @@ import {
 } from 'lucide-react'
 
 export function IQUnlock() {
+  const [isLoading, setIsLoading] = useState(true)
+  
   const {
     isConnected,
     address,
@@ -46,6 +48,11 @@ export function IQUnlock() {
 
   const [showTest, setShowTest] = useState(false)
 
+  // Set loading to false after component mounts
+  useEffect(() => {
+    setIsLoading(false)
+  }, [])
+
   // Mock test questions for demo
   const mockQuestions = [
     "Who was the first woman to dunk in a WNBA game?",
@@ -54,8 +61,6 @@ export function IQUnlock() {
   ]
 
   const mockAnswers = ["Lisa Leslie", "Simone Biles", "1996"]
-
-
 
   const handleStartTest = () => {
     setShowTest(true)
@@ -89,6 +94,18 @@ export function IQUnlock() {
       // Try to open in external wallet or show instructions
       window.open('https://metamask.io/download/', '_blank')
     }
+  }
+
+  // Show loading state initially
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-indigo-900 p-4 flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="h-12 w-12 text-purple-300 mx-auto mb-4 animate-spin" />
+          <p className="text-gray-300">Loading Sports IQ Unlock...</p>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -144,23 +161,23 @@ export function IQUnlock() {
                 </div>
                 
                 <div className="space-y-3">
-                                  <Button
-                  onClick={handleConnectWallet}
-                  disabled={isConnecting}
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 rounded-xl disabled:opacity-50"
-                >
-                  {isConnecting ? (
-                    <>
-                      <Loader2 className="h-5 w-5 mr-2 animate-spin" />
-                      Connecting...
-                    </>
-                  ) : (
-                    <>
-                      <Wallet className="h-5 w-5 mr-2" />
-                      Connect Wallet
-                    </>
-                  )}
-                </Button>
+                  <Button
+                    onClick={handleConnectWallet}
+                    disabled={isConnecting}
+                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 rounded-xl disabled:opacity-50"
+                  >
+                    {isConnecting ? (
+                      <>
+                        <Loader2 className="h-5 w-5 mr-2 animate-spin" />
+                        Connecting...
+                      </>
+                    ) : (
+                      <>
+                        <Wallet className="h-5 w-5 mr-2" />
+                        Connect Wallet
+                      </>
+                    )}
+                  </Button>
                   
                   {isFarcasterApp && (
                     <Button
