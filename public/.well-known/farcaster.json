@@ -2,18 +2,18 @@
   "frame": {
     "version": "1",
     "name": "Women's Sports Quiz",
-    "iconUrl": "https://your-domain.com/icon.png",
-    "homeUrl": "https://your-domain.com",
-    "imageUrl": "https://your-domain.com/api/og",
+    "iconUrl": "https://YOUR_VERCEL_URL.vercel.app/icon.png",
+    "homeUrl": "https://YOUR_VERCEL_URL.vercel.app",
+    "imageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
     "buttonTitle": "🏀 Start Quiz",
-    "splashImageUrl": "https://your-domain.com/icon.png",
+    "splashImageUrl": "https://YOUR_VERCEL_URL.vercel.app/icon.png",
     "splashBackgroundColor": "#667eea",
     "subtitle": "Test your women's sports knowledge",
     "description": "Challenge yourself with 5 fun questions about women's sports history, records, and viral moments. Perfect for sports fans and trivia lovers!",
     "screenshotUrls": [
-      "https://your-domain.com/screenshot1.png",
-      "https://your-domain.com/screenshot2.png",
-      "https://your-domain.com/screenshot3.png"
+      "https://YOUR_VERCEL_URL.vercel.app/screenshot1.png",
+      "https://YOUR_VERCEL_URL.vercel.app/screenshot2.png",
+      "https://YOUR_VERCEL_URL.vercel.app/screenshot3.png"
     ],
     "primaryCategory": "games",
     "tags": [
@@ -23,11 +23,11 @@
       "trivia",
       "basketball"
     ],
-    "heroImageUrl": "https://your-domain.com/api/og",
+    "heroImageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
     "tagline": "Test your women's sports knowledge",
     "ogTitle": "Women's Sports Quiz",
     "ogDescription": "Challenge yourself with 5 fun questions about women's sports history, records, and viral moments!",
-    "ogImageUrl": "https://your-domain.com/api/og",
-    "canonicalDomain": "your-domain.com"
+    "ogImageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
+    "canonicalDomain": "YOUR_VERCEL_URL.vercel.app"
   }
 } 
