@@ -19,8 +19,6 @@ import {
 } from 'lucide-react'
 
 export function IQUnlock() {
-  const [isLoading, setIsLoading] = useState(true)
-  
   const {
     isConnected,
     address,
@@ -47,11 +45,6 @@ export function IQUnlock() {
   } = useUnlockIQ()
 
   const [showTest, setShowTest] = useState(false)
-
-  // Set loading to false after component mounts
-  useEffect(() => {
-    setIsLoading(false)
-  }, [])
 
   // Mock test questions for demo
   const mockQuestions = [
@@ -96,17 +89,7 @@ export function IQUnlock() {
     }
   }
 
-  // Show loading state initially
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-indigo-900 p-4 flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="h-12 w-12 text-purple-300 mx-auto mb-4 animate-spin" />
-          <p className="text-gray-300">Loading Sports IQ Unlock...</p>
-        </div>
-      </div>
-    )
-  }
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-indigo-900 p-4">
