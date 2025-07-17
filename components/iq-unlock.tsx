@@ -85,7 +85,7 @@ export function IQUnlock() {
 
   const openInWallet = () => {
     // For Farcaster Mini Apps, we might need to open in external wallet
-    if (isFarcasterApp) {
+    if (isFarcasterApp && typeof window !== 'undefined') {
       // Try to open in external wallet or show instructions
       window.open('https://metamask.io/download/', '_blank')
     }

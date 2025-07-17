@@ -12,6 +12,9 @@ export function useFarcasterWallet() {
   // Check if we're in a Farcaster Mini App environment
   useEffect(() => {
     const checkFarcasterApp = () => {
+      // Only run on client side
+      if (typeof window === 'undefined') return
+      
       const isInFarcaster = window.location.href.includes('farcaster') || 
                            window.location.href.includes('warpcast') ||
                            window.navigator.userAgent.includes('Farcaster') ||
