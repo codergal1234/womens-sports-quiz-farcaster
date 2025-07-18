@@ -2,18 +2,18 @@
   "frame": {
     "version": "1",
     "name": "Women's Sports Quiz",
-    "iconUrl": "https://YOUR_VERCEL_URL.vercel.app/icon.png",
-    "homeUrl": "https://YOUR_VERCEL_URL.vercel.app",
-    "imageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
+    "iconUrl": "https://womens-sports-quiz-farcaster.vercel.app/icon.png",
+    "homeUrl": "https://womens-sports-quiz-farcaster.vercel.app",
+    "imageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
     "buttonTitle": "🏀 Start Quiz",
-    "splashImageUrl": "https://YOUR_VERCEL_URL.vercel.app/icon.png",
+    "splashImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/icon.png",
     "splashBackgroundColor": "#667eea",
     "subtitle": "Test your women's sports knowledge",
     "description": "Challenge yourself with 5 fun questions about women's sports history, records, and viral moments. Perfect for sports fans and trivia lovers!",
     "screenshotUrls": [
-      "https://YOUR_VERCEL_URL.vercel.app/screenshot1.png",
-      "https://YOUR_VERCEL_URL.vercel.app/screenshot2.png",
-      "https://YOUR_VERCEL_URL.vercel.app/screenshot3.png"
+      "https://womens-sports-quiz-farcaster.vercel.app/screenshot1.png",
+      "https://womens-sports-quiz-farcaster.vercel.app/screenshot2.png",
+      "https://womens-sports-quiz-farcaster.vercel.app/screenshot3.png"
     ],
     "primaryCategory": "games",
     "tags": [
@@ -23,11 +23,11 @@
       "trivia",
       "basketball"
     ],
-    "heroImageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
+    "heroImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
     "tagline": "Test your women's sports knowledge",
     "ogTitle": "Women's Sports Quiz",
     "ogDescription": "Challenge yourself with 5 fun questions about women's sports history, records, and viral moments!",
-    "ogImageUrl": "https://YOUR_VERCEL_URL.vercel.app/api/og",
-    "canonicalDomain": "YOUR_VERCEL_URL.vercel.app"
+    "ogImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
+    "canonicalDomain": "womens-sports-quiz-farcaster.vercel.app"
   }
 } 
