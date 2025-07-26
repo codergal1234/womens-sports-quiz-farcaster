@@ -1,11 +1,9 @@
 {
-  "frame": {
+  "miniapp": {
     "version": "1",
     "name": "Women's Sports Quiz",
     "iconUrl": "https://womens-sports-quiz-farcaster.vercel.app/icon.png",
     "homeUrl": "https://womens-sports-quiz-farcaster.vercel.app",
-    "imageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
-    "buttonTitle": "🏀 Start Quiz",
     "splashImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/icon.png",
     "splashBackgroundColor": "#667eea",
     "subtitle": "Test your women's sports knowledge",
@@ -24,10 +22,9 @@
       "basketball"
     ],
     "heroImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
-    "tagline": "Test your women's sports knowledge",
+    "tagline": "Test your sports knowledge",
     "ogTitle": "Women's Sports Quiz",
     "ogDescription": "Challenge yourself with 5 fun questions about women's sports history, records, and viral moments!",
-    "ogImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og",
-    "canonicalDomain": "womens-sports-quiz-farcaster.vercel.app"
+    "ogImageUrl": "https://womens-sports-quiz-farcaster.vercel.app/api/og"
   }
 } 
