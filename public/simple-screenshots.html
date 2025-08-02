@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Farcaster Screenshots</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            background: #f0f0f0; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .screenshot { 
+            width: 1284px; 
+            height: 2778px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #333;
+            position: relative;
+        }
+        .screenshot h1 {
+            font-size: 64px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .screenshot p {
+            font-size: 32px;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+        .button {
+            background: rgba(255,255,255,0.2);
+            border: 3px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 30px;
+            font-size: 24px;
+            margin: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .size-label {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .instructions {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Simple Farcaster Screenshots</h2>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Each box below is exactly <strong>1284x2778 pixels</strong></li>
+            <li>Right-click on each box and select "Save image as..."</li>
+            <li>Save as <code>screenshot1.png</code>, <code>screenshot2.png</code>, <code>screenshot3.png</code></li>
+            <li>Replace the files in your <code>public/</code> folder</li>
+        </ol>
+    </div>
+    
+    <!-- Screenshot 1 -->
+    <div class="screenshot">
+        <div class="size-label">1284 x 2778</div>
+        <h1>🏀 Women's Sports Quiz</h1>
+        <p>Test your knowledge of women's sports and unlock your IQ score!</p>
+        <div class="button">Take the Quiz</div>
+        <div class="button">Unlock IQ Score</div>
+    </div>
+    
+    <!-- Screenshot 2 -->
+    <div class="screenshot">
+        <div class="size-label">1284 x 2778</div>
+        <h1>Question 1</h1>
+        <p>Who was the first woman to dunk in a WNBA game?</p>
+        <div class="button">Lisa Leslie</div>
+        <div class="button">Candace Parker</div>
+        <div class="button">Sylvia Fowles</div>
+    </div>
+    
+    <!-- Screenshot 3 -->
+    <div class="screenshot">
+        <div class="size-label">1284 x 2778</div>
+        <h1>🎉 Quiz Complete!</h1>
+        <p>You scored 4 out of 5!</p>
+        <div style="font-size: 48px; margin: 30px 0;">🏆 ALL-STAR</div>
+        <div class="button">Play Again</div>
+        <div class="button">Share Score</div>
+    </div>
+</body>
+</html> 
